@@ -5,5 +5,5 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('loader').style.display = 'none';
         // Muestra el contenido seguido
         document.getElementById('content').style.display = 'block';
-    }, 3000);
+    }, 2000);
 });
