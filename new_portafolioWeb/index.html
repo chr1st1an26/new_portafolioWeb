@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
     <title>Davis Portafolio</title>
-</head>
-<body>
-     <!-- loader -->
+  </head>
+  <body>
+    <!-- loader -->
     <div class="loader" id="loader"></div>
 
+    <div id="content" style="display: none">
+      <!--navar-->
 
-    <div id="content" style="display: none;">
-
-
-            <!--navar-->
-
-    <nav  class="navbar">
+      <nav class="navbar">
         <div class="navbar-logo">
-        <!--<i class="fa-solid fa-user"></i>
-          <i class="fa-solid fa-code" style="font-size: 30px; color:  #0e52d0;"></i>-->
-          
-         <img src="img/prueba.png" alt="Logo"> 
+          <img src="img/prueba.png" alt="Logo" />
         </div>
-        <ul class="navbar-menu"  >
-          <li><a href="" style="font-size: 20px;" >Inicio</a></li>
-          <li><a href="" style="font-size: 20px;">Team</a></li>
-  
+        <ul class="navbar-menu">
+          <li><a href="" style="font-size: 20px">Inicio</a></li>
+          <li><a href="" style="font-size: 20px">Team</a></li>
         </ul>
       </nav>
-    
-      <main class="main">
-        <div class="info-content">
-          <h1>I'm <span>Christian</span> Davis</h1>
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt facilis minima eveniet accusamus rem sint doloribus quia eligendi expedita optio, dolore quo ipsa atque. Expedita doloremque deleniti alias iste quia?</p>
-           <a download href="#"><button class="download-cv">Download CV</button></a>
+
+      <header>
+        <div data-aos="flip-left" data-aos-duration="4000">
+          <div class="container">
+            <div class="textos">
+              <h1>Mi portafolio</h1>
+              <h2>Christian Emmanuel Davis Castañeda.</h2>
+              <h3>Desarollador de software multiplataforma</h3>
+              <!-- <a  href="document/CV-Davis-Castañeda.pdf" download="cv"
+                style="font-size: 20px;">Visualiza mi cv</a> -->
+
+              <button
+                class="continue-application"
+                onclick="window.location.href='/'"
+              >
+                <div>
+                  <div class="pencil"></div>
+                  <div class="folder">
+                    <div class="top">
+                      <svg viewBox="0 0 24 27">
+                        <path
+                          d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="paper"></div>
+                  </div>
+                </div>
+                Descargar PDF
+              </button>
+            </div>
+            <img class="miImagen" src="/img/perfil/perfil_2.jpeg" alt="" />
+          </div>
         </div>
-        <img src="./img/perfil/perfil_2.jpeg" alt="">
-      </main>
-
-
-
-
+      </header>
     </div>
 
-
-
-
-  
-
-
-
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="js/loader.js"></script>
-  
-</body>
+  </body>
 </html>
